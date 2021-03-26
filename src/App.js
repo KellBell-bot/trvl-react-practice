@@ -1,10 +1,17 @@
 import './App.css';
+import NavBar from './Components/NavBar';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-     <h1>What's Poppin</h1>
-    </div>
+    <>
+    <Router>
+      <NavBar/>
+      <Switch>
+        <Route path= "/" exact/>
+      </Switch>
+    </Router>
+    </>
   );
 }
 
